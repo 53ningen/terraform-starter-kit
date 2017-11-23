@@ -1,7 +1,7 @@
 terraform project template
 ===
 
-terraform 0.10.7
+terraform 0.11.0
 
 ## install terraform
 
