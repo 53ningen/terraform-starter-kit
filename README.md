@@ -1,4 +1,7 @@
 terraform project template
+===
+
+terraform 0.10.7
 
 ## install terraform
 
@@ -21,6 +24,22 @@ rbenv exec bundle install
 ## backend
 
 DynamoDB + S3
+
+
+## how to use
+### create terraform backend
+
+```
+cd ./environment/backends
+
+# fix all "FIXME"s of ./enviroment/backends/*.tf files, then
+terraform init -backend-config="profile=<your aws profile>"
+terraform get
+terraform apply
+
+mv ./.backend.tf backend.tf
+terraform init
+```
 
 ## license
 

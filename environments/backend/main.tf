@@ -5,16 +5,9 @@ module "backend" {
   backend_bucket_name = "terraform.starter.kit.backend" # FIXME
 }
 
-# backend for production
-module "prod_backend" {
+# backend for application 
+module "application_backend" {
   source = "../../modules/tf_backend"
 
-  backend_bucket_name = "terraform.starter.kit.prod" # FIXME
-}
-
-# backend for development
-module "dev_backend" {
-  source = "../../modules/tf_backend"
-
-  backend_bucket_name = "terraform.starter.kit.dev" #FIXME
+  backend_bucket_name = "terraform.starter.kit.application" # FIXME
 }
