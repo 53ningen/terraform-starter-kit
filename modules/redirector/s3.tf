@@ -6,11 +6,7 @@ resource "aws_s3_bucket" "redirector" {
     ENV = "${terraform.workspace}"
   }
 
-  versioning {
-    enabled = true
-  }
-
   website {
-    redirect_all_requests_to = "yahoo.co.jp"
+    redirect_all_requests_to = "https://yahoo.co.jp"
   }
 }
