@@ -21,6 +21,23 @@ terraform init
 rbenv exec bundle install
 ```
 
+## install tflint
+
+for macOS
+
+```
+brew tap wata727/tflint
+brew install tflint
+```
+
+```
+wget https://github.com/wata727/tflint/releases/download/v0.5.2/tflint_darwin_amd64.zip
+unzip tflint_darwin_amd64.zip
+mkdir -p /usr/local/tflint/bin
+export PATH=/usr/local/tflint/bin:$PATH
+install tflint /usr/local/tflint/bin
+```
+
 ## backend
 
 DynamoDB + S3
